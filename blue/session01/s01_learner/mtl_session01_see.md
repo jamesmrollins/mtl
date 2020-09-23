@@ -104,7 +104,7 @@ d. …empower you to realize ongoing improvements in team quality of care and te
 
 [<img src = "https://raw.githubusercontent.com/lzim/teampsd/master/resources/illustrations/data_ui_sim_ui.png">](#DontLink)
 
-### 6. Select the Team Vision
+### 6. Select the Team Vision - TEST AdditionAuthor
 
 ## Done and Do (15 minutes)
 <!-- Done/Do Tables -->
