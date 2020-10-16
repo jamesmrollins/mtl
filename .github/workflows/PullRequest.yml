@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+# The purpose of this action is to provide automatic notifications to required reviewers of a pull request to the QA branch.
 
 name: PullRequest
 
