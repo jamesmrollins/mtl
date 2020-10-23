@@ -48,7 +48,7 @@ output:
 
 3.	Review the data files you have uploaded for use and make sure you have what you want.
 
-4.	You can *Join Current Session* or *Start a New Session* in the Aggregate module. If you *Start a New Session* select the team data file you’d like to use.
+4.	You can *Join Current Session* or *Start a New Session* in the team module. If you *Start a New Session* select the team data file you’d like to use.
 
 5.	To refresh your memory and pick up where you left off last time, Select the experiment from the last session and check the box to include text from this session in Expanded Outputs text fields. Review those text fields.
 

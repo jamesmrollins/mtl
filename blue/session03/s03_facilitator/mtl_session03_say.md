@@ -72,7 +72,7 @@ As the graphic illustrates, we use the data UI to look back at team trends over 
    + Care Coordination (CC) - tab title *CCParams*
    + Medication Management (MM) - tab title *MMParams*
    + Psychotherapy (PSY) - tab title *PSYParams*
-   + Aggregate mix of services (AGG) - tab title *AggParams*
+   + team mix of services (AGG) - tab title *AggParams*
    + Measurement Based Stepped Care and Suicide Prevention (SP) - tab title *SPParams*
 
 - The patient cohort for each module is built by capturing all the unique patients who had a visit with the given team (from the user-supplied list of clinics/grids) within the correct encounter bin between 18 and 6 months ago.  From that set of clinics, patients, and CPT codes, the data query then fetches all visits, no matter how long ago or how recent. 
@@ -156,7 +156,7 @@ As the graphic illustrates, we use the data UI to look back at team trends over 
 
 2. The next thing we ask is that each member of the team fill out a short form that you'll find at mtl.how/menu. It will take about 12 minutes. Your responses will be confidential; no identifying information is collected.
 
-3. We will aggregate the responses and consider them together in the next session to help the team choose which *MTL* module we'll use for the next several sessions of *Modeling to Learn*.
+3. We will team the responses and consider them together in the next session to help the team choose which *MTL* module we'll use for the next several sessions of *Modeling to Learn*.
 
 
 ## Until next time, thank you for *Modeling to Learn*!
