@@ -137,15 +137,13 @@ For *MTL* 1.7 click [here](https://github.com/lzim/mtl/blob/master/release_1.7/m
 
   - **Never include any PII/PHI in your description and screenshot unless you are emailing mtl.help@va.gov from your VA email.**
   - To include screenshots in the "Community" button, you can:
-    - Copy & paste from Snipping Tool
-[![](https://raw.githubusercontent.com/lzim/teampsd/master/resources/gifs/mtl_2.0/snip_tool_community.gif)](#DontLink) 
-    - Drag & drop a screenshot file
-[![](https://raw.githubusercontent.com/lzim/teampsd/master/resources/gifs/mtl_2.0/drag_drop_community.gif)](#DontLink) 
     - Upload your screenshot file
-[![](https://raw.githubusercontent.com/lzim/teampsd/master/resources/gifs/mtl_2.0/upload_files_community.gif)](#DontLink) 
+    - Drag & drop a screenshot file
+    - Copy & paste from Snipping Tool
+    - **Same screenshot functions as the Report Bug Icon above
+
 
 For *MTL* 1.7 click [here](https://github.com/lzim/mtl/blob/master/release_1.7/mtl_session05_see.md).
-
 
 6. Start a New Session
 
@@ -160,8 +158,11 @@ For *MTL* 1.7 click [here](https://github.com/lzim/mtl/blob/master/release_1.7/m
    + For CC & MM, you need to select your Learning Mode before hitting Play.  
    + Refer to the Care Coordination (CCParams) or Medication Management (MMParams) tab of the Team Data Table at mtl.how/data, for data regarding the team's New Patient Start Rates and Return-to-Clinic Intervals.
    + **Note:** Once you pick a Learning Mode to prioritize the New Patient Start Rate or the Existing Patients Return-to-Clinic Visit Interval, this will be the setting your team will experiment with through Session 12 for the rest of the *Modeling to Learn* program.
-
+   
 [![](https://raw.githubusercontent.com/lzim/teampsd/master/resources/gifs/mtl_2.0/learning_mode.gif)](#DontLink)
+
+   + Upon clicking icons like "Play," "Run," or "Reset,' a quick tip will appear on the loading screen on different functions in the sim UI.
+[![](https://raw.githubusercontent.com/lzim/teampsd/master/resources/gifs/mtl_2.0/s5_quick_tips.gif)](#DontLink) 
 
 For *MTL* 1.7 click [here](https://github.com/lzim/mtl/blob/master/release_1.7/mtl_session05_see.md).
 
@@ -186,6 +187,8 @@ For *MTL* 1.7 click [here](https://github.com/lzim/mtl/blob/master/release_1.7/m
    + What types of decisions does the team make that affect these variables?
 
    + How do the values in this table strike you? Do they line up with how you think things really are?
+   
+[![](https://raw.githubusercontent.com/lzim/teampsd/master/resources/gifs/mtl_2.0/s5_i_information.gif)](#DontLink) 
 
 9. Find the Team Data Table variables in the system diagram at the left.
 
