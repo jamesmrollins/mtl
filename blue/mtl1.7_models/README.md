@@ -19,7 +19,7 @@ This module enables you to experiment with how team decisions about referrals, t
 This module shows how team psychotherapy decisions interact, and depicts patterns of psychotherapy engagement in your team. You can explore solutions to the challenges of getting patients to complete a full course of therapy, while also achieving goals to start enough new patients in psychotherapy. Insights about these dynamics can be used to increase the local reach of evidence-based psychotherapies.
     - *MTL 1.7* release of the PSY Vensim DSS model (.mdl)
 
--  **Aggregate (AGG)**
+-  **team (AGG)**
 This module shows the interactions between all services offered by your team. It allows you to explore the impacts of how you allocate time across services and change within team referrals after patient review. It is also possible to experiment with your team's willingness to use overtime as a solution to a large backlog of appointments, and how sensitive your team's morale, quality of care provided and burnout are to working long hours.
     - *MTL 1.7* release of the AGG Vensim DSS model (.mdl)
 

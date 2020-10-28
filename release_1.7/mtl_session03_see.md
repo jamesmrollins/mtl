@@ -44,7 +44,7 @@ output:
   - Care Coordination (CC)
   - Medication Management (MM)
   - Psychotherapy (PSY)
-  - Aggregate team services (AGG)
+  - team team services (AGG)
   - Measurement-based stepped care for suicide prevention (SP)
 
 ### 1. Select a module for review

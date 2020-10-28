@@ -46,7 +46,7 @@ output:
 ### 2. Explore the information available in the BISL sharepoint splash page
 
 - Click on the tabs at the bottom of the Spreadsheet. What options are there and what do they mean?
-  - Count: Aggregate Data for Viz trends
+  - Count: team Data for Viz trends
   - Data: Sortable report of data
   - Diag: Diagnostic data 
   - Enc: Encounter types of visits

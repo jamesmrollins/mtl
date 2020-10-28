@@ -31,7 +31,7 @@ output:
 
 ## Learning Objectives
 
-1.	Describe the parameters that are calculated by the *MTL* Data User Interface for Care Coordination (CC), Medication Management (MM), Psychotherapy (PSY), Aggregate Mix of Services (AGG) and Measurement Based Stepped Care and Suicide Prevention (SP).
+1.	Describe the parameters that are calculated by the *MTL* Data User Interface for Care Coordination (CC), Medication Management (MM), Psychotherapy (PSY), team Mix of Services (AGG) and Measurement Based Stepped Care and Suicide Prevention (SP).
 
 2.	Test your expectations against calculated overall team statistics for CC, MM, PSY, AGG, and SP.
 
@@ -47,7 +47,7 @@ output:
   - Care Coordination (CC)
   - Medication Management (MM)
   - Psychotherapy (PSY)
-  - Aggregate team services (AGG)
+  - team team services (AGG)
   - Measurement-based stepped care and suicide prevention (SP)
   
 - Select a set of clinics in **ClinicSelection tab** similar to what you did for the data UI. 

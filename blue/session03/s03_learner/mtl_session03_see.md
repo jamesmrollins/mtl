@@ -50,7 +50,7 @@ output:
   - Care Coordination (CC)
   - Medication Management (MM)
   - Psychotherapy (PSY)
-  - Aggregate team services (AGG)
+  - team team services (AGG)
   - Measurement-based stepped care and suicide prevention (SP)
   
 - Select a set of clinics in **ClinicSelection tab** similar to what you did for the data UI. 

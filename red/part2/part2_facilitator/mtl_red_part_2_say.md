@@ -33,7 +33,7 @@ Hello! I'm __________ and I'm __________.
 ## Learning Objectives
 ### After this session, you will be able to:
 
-1.	Describe the parameters that are calculated by the *MTL* Data User Interface for Care Coordination (CC), Medication Management (MM), Psychotherapy (PSY), Aggregate Mix of Services (AGG) and Measurement Based Stepped Care and Suicide Prevention (SP).
+1.	Describe the parameters that are calculated by the *MTL* Data User Interface for Care Coordination (CC), Medication Management (MM), Psychotherapy (PSY), team Mix of Services (AGG) and Measurement Based Stepped Care and Suicide Prevention (SP).
 
 2.	Test your expectations against calculated overall team statistics for CC, MM, PSY, AGG, and SP.
 
@@ -68,7 +68,7 @@ Hello! I'm __________ and I'm __________.
    + Care Coordination (CC) - tab title *CCParams*
    + Medication Management (MM) - tab title *MMParams*
    + Psychotherapy (PSY) - tab title *PSYParams*
-   + Aggregate mix of services (AGG) - tab title *AggParams*
+   + team mix of services (AGG) - tab title *AggParams*
    + Measurement Based Stepped Care and Suicide Prevention (SP) - tab title *SPParams*
    
 - The patient cohort for each module is built by capturing all the unique patients who had a visit with the given team (from the user-supplied list of clinics/grids) within the correct encounter bin between 18 and 6 months ago.  From that set of clinics, patients, and CPT codes, the data query then fetches all visits, no matter how long ago or how recent. 
