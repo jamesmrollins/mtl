@@ -74,7 +74,7 @@ CC Starting a Service w Other Needs=
 Adjunctive Patients w Other Needs=
 	Adjunctive Patients in Service*"Adjunctive % w Other Needs"
 	~	pts
-	~	The numbers of patients in each service who have Other Needs as a primary \
+	~	The numbers of patients in each service who have Other Needs Dev Testing as a primary \
 		diagnosis.
 	|
 
