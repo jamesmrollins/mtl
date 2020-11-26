@@ -10,7 +10,7 @@ on:
     #paths:
      #'**.mdl'
   pull_request:
-    branches: [Master, QA, Dev]
+    branches: [master, QA, Dev]
     types: [closed]
     paths:
     - '**.mdl'
@@ -34,7 +34,11 @@ jobs:
       id: getfile
       run: |
         echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} -- '*.mdl' | xargs)"
-        
+     
+    - name: echo output
+      run: |
+        echo ${{ steps.getfile.outputs.files }}
+     
     - name: '' #get changed Dir Name
       id: getDirName
       run: |
