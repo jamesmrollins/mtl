@@ -5,15 +5,15 @@ name: UploadModel
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  #push:
-    #branches: [ QA, Dev]
-    #paths:
-     #'**.mdl'
-  pull_request:
-    branches: [Master, QA, Dev]
-    types: [closed]
+  push:
+    branches: [ master]
     paths:
-    - '**.mdl'
+     '**.mdl'
+  #pull_request:
+   # branches: [master, QA, Dev]
+    #types: [closed]
+    #paths:
+    #- '**.mdl'
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -34,6 +34,10 @@ jobs:
       id: getfile
       run: |
         echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} -- '*.mdl' | xargs)"
+     
+    - name: echo output
+      run: |
+        echo ${{ steps.getfile.outputs.files }}
         
     - name: '' #get changed Dir Name
       id: getDirName
