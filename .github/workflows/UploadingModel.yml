@@ -37,6 +37,7 @@ jobs:
      
     - name: echo output
       run: |
+        echo ${GITHUB_REF##*/}
         echo ${{ steps.getfile.outputs.files }}
      
     - name: '' #get changed Dir Name
