@@ -5,12 +5,12 @@ name: UploadModel
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  #push:
-    #branches: [ QA, Dev]
-    #paths:
-     #'**.mdl'
+  push:
+    branches: [QA]
+    paths:
+     '**.mdl'
   pull_request:
-    branches: [master, QA, Dev]
+    branches: [QA]
     types: [closed]
     paths:
     - '**.mdl'
