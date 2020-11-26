@@ -29,7 +29,11 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: "0"
- 
+   
+    - name: echo output
+      run: |
+        echo ${GITHUB_REF##*/}
+     
     - name: '' #get changed files
       id: getfile
       run: |
