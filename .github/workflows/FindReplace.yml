@@ -50,7 +50,7 @@ jobs:
       id: fn
       uses: shitiomatic/str-replace@master
       with:
-        find: "aggregate"
+        find: "[Aa]ggregate"
         replace: "team"
         
         # search returns only committed file by user 
