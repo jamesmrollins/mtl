@@ -5,15 +5,15 @@ name: UploadModel
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  #push:
-    #branches: [QA]
-    #paths:
-     #'**.mdl'
-  pull_request:
+  push:
     branches: [QA]
-    types: [closed]
     paths:
-    - '**.mdl'
+     '**.mdl'
+  #pull_request:
+    #branches: [QA]
+    #types: [closed]
+    #paths:
+    #- '**.mdl'
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
