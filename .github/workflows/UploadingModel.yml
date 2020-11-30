@@ -94,9 +94,9 @@ jobs:
       if: always()  
       run: .github\workflows\DevUtility\VensimUtility\vensim ".github\workflows\DevUtility\vensimInput.cmd"
    
-    - name: Run a Deploy script # echo ${GITHUB_REF##*/} this is code for getting dynamic branch name
+    - name: Run a Deploy script # echo ${GITHUB_REF##*/} this is code for getting dynamic branch name #${{ secrets.TEMPDATA }} 
       if: always()   
-      run: '.github\workflows\DevUtility\DeployFilesUtility\deploy "${{ secrets.TEMPDATA }}" "${{ needs.getFileNameList.outputs.outputFileName }}" "Dev"'
+      run: '.github\workflows\DevUtility\DeployFilesUtility\deploy "hirenp@waferwire.com" "${{ needs.getFileNameList.outputs.outputFileName }}" "Dev"'
     
     
     #- name: Run a one-line script
