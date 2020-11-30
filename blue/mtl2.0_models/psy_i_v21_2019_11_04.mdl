@@ -14,7 +14,7 @@
 	(1+STEP(Change in Engagement Time of Patients Past 3 Months,Experiment wk)) , "RVI >3mo - 2-7Visits-MidD"\
 		, 1)
 	~	Dmnl [-0.75,2,0.25]
-	~	Relative change in the median ET of all patients still in care after their \
+	~	Relative change in the median ET of all patients still in care after Dev Testing their \
 		first 3 months delayed by the RVI, as appointments are completed based on \
 		the RVI in use at the time they were booked.  Any change in the ET does \
 		not affect appointments already booked, only appointments being booked \
