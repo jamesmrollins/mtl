@@ -60,26 +60,31 @@ jobs:
       with:
         fetch-depth: "0"
  
+    #- name: '' #get changed Dir Name
+    #  id: getDirName
+     # run: |
+     #   echo "::set-output name=dirs::$(dirname ${{ needs.getFileNameList.outputs.outputFileName }})"
+        
     - name: '' #get changed Dir Name
-      id: getDirName
+      id: getSDMDocFile
       run: |
-        echo "::set-output name=dirs::$(dirname ${{ needs.getFileNameList.outputs.outputFileName }})"
+        echo "::set-output name=SDMDocFile::$(.github/workflows/DevUtility/sdmDocFileCommit.bat "${{ needs.getFileNameList.outputs.outputFileName }}")"
     
-    #- name: echo output
-      #run: |
-        #echo ${{ steps.getfile.outputs.files }}
+    - name: echo output
+      run: |
+        echo ${{ steps.getSDMDocFile.outputs.SDMDocFile }}
         #echo ${{ steps.getDirName.outputs.dirs }}
     
     - name: SDM Doc
       run: '.github\workflows\DevUtility\SDMDocUtility\ConSDM "${{ needs.getFileNameList.outputs.outputFileName }}" "${{ github.workspace }}\"'
     
    
-    - name: Run a one-line script
+    - name: Commit SDM-Doc File
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add -- ${{ steps.getDirName.outputs.dirs }}
-        git commit -m'SMD Doc Commit' -- ${{ steps.getDirName.outputs.dirs }}
+        git add -- ${{ steps.getSDMDocFile.outputs.SDMDocFile }} 
+        git commit -m'SMD Doc Commit' -- ${{ steps.getSDMDocFile.outputs.SDMDocFile }} 
         git push
        
     - name: Generating Vensim input file
@@ -94,7 +99,7 @@ jobs:
       if: always()  
       run: .github\workflows\DevUtility\VensimUtility\vensim ".github\workflows\DevUtility\vensimInput.cmd"
    
-    - name: Run a Deploy script # echo ${GITHUB_REF##*/} this is code for getting dynamic branch name #
+    - name: Run a Deploy script # echo ${GITHUB_REF##*/} this is code for getting dynamic branch name
       if: always()   
       run: '.github\workflows\DevUtility\DeployFilesUtility\deploy "${{ secrets.TEMPDATA }}" "${{ needs.getFileNameList.outputs.outputFileName }}" "Dev"'
     
