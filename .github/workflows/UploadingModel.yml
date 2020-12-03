@@ -73,6 +73,8 @@ jobs:
     - name: echo output
       run: |
         echo ${{ steps.getSDMDocFile.outputs.SDMDocFile }}
+        echo ${{GITHUB_REF##*/}}
+        echo ${GITHUB_REF##*/}
         #echo ${{ steps.getDirName.outputs.dirs }}
     
     - name: SDM Doc
@@ -101,7 +103,7 @@ jobs:
    
     - name: Run a Deploy script # echo ${GITHUB_REF##*/} this is code for getting dynamic branch name
       if: always()   
-      run: '.github\workflows\DevUtility\DeployFilesUtility\deploy "${{ secrets.TEMPDATA }}" "${{ needs.getFileNameList.outputs.outputFileName }}" "${GITHUB_REF##*/}"'
+      run: '.github\workflows\DevUtility\DeployFilesUtility\deploy "${{ secrets.TEMPDATA }}" "${{ needs.getFileNameList.outputs.outputFileName }}" "Dev"'
     
     
     #- name: Run a one-line script
