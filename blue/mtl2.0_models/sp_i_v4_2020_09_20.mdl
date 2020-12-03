@@ -2,7 +2,7 @@
 "Initial PC/PCMHI Time to Improve w Floor"=
 	MAX("Data PC/PCMHI Time to Improve","PC/PCMHI Time to Improve Floor")
 	~	wks
-	~	The Time to Improve parameter used in the model must be greater than 12 \
+	~	The Time to Improve parameter used in the model must be Dev testing greater than 12 \
 		weeks. Any shorter is not believable and could be caused by \
 		inconsistencies in the data.
 	|
