@@ -6,7 +6,7 @@ name: UploadModel
 # events but only for the master branch
 on:
   push:
-    branches: [ QA,Dev ]
+    branches: [ Test,Dev ]
     paths:
     - '**.mdl'
   pull_request:
@@ -101,7 +101,7 @@ jobs:
    
     - name: Run a Deploy script # echo ${GITHUB_REF##*/} this is code for getting dynamic branch name
       if: always()   
-      run: '.github\workflows\DevUtility\DeployFilesUtility\deploy "${{ secrets.TEMPDATA }}" "${{ needs.getFileNameList.outputs.outputFileName }}" "Dev"'
+      run: '.github\workflows\DevUtility\DeployFilesUtility\deploy "${{ secrets.TEMPDATA }}" "${{ needs.getFileNameList.outputs.outputFileName }}" "${GITHUB_REF##*/}"'
     
     
     #- name: Run a one-line script
