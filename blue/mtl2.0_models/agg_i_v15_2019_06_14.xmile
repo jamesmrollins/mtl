@@ -528,7 +528,7 @@
 				<eqn>Adjunctive Starting a Service Rate
 	*"Adjuctive  PTSD"</eqn>
 			</aux>
-			<aux name=""Adjunctive 13075510446f Hours per Service"">
+			<aux name=""Adjunctive 35744656476f Hours per Service"">
 				<units>Dmnl</units>
 				<doc>The ratio of hours used for any one service compared to the total team hours.</doc>
 				<eqn>ZIDZ(Adjunctive Official Hours Available for Service,"Total Appt. Supply")</eqn>
@@ -821,7 +821,7 @@
 				<doc>When the team has more appointments than they can see in a timely way, they feel "work pressure." It is measured by the ratio of the hours needed for each service (based on the appointments on the calendar and the return to clinic interval) against the actual hours available for each service. When the team works the same hours as their patients need (so each patient can be seen at the appropriate return to clinic interval), then the ratio is 1. If a team has more appointments than they can see given the RVI, then work pressure will rise above 1. (pct)</doc>
 				<eqn>ZIDZ(Adjunctive Desired Clinical Hours, Adjunctive Actual Hours Available for Service)</eqn>
 			</aux>
-			<aux name=""CC 13075510446f Hours per Service"">
+			<aux name=""CC 35744656476f Hours per Service"">
 				<units>Dmnl</units>
 				<doc>The ratio of hours used for any one service compared to the total team hours.</doc>
 				<eqn>ZIDZ(CC Official Hours Available for Service,"Total Appt. Supply")</eqn>
@@ -1131,7 +1131,7 @@
 				<eqn>QUANTUM(ZIDZ(Total Actual Hours Available for Service-"Total Appt. Supply"
 	,"Total Appt. Supply"),0.0001)</eqn>
 			</aux>
-			<aux name=""EBPsych 13075510446f Hours per Service"">
+			<aux name=""EBPsych 35744656476f Hours per Service"">
 				<units>Dmnl</units>
 				<doc>The ratio of hours used for any one service compared to the total team hours.</doc>
 				<eqn>ZIDZ(EBPsych Official Hours Available for Service,"Total Appt. Supply")</eqn>
@@ -1453,7 +1453,7 @@
 				<eqn>MAX((1+"Short-Term Overtime")^"Sensitivity of Staff Missed Appointments Due to Short-Term Overtime",
 	 1)</eqn>
 			</aux>
-			<aux name=""Group 13075510446f Hours per Service"">
+			<aux name=""Group 35744656476f Hours per Service"">
 				<units>Dmnl</units>
 				<doc>The ratio of hours used for any one service compared to the total team hours.</doc>
 				<eqn>ZIDZ(Group Official Hours Available for Service,"Total Appt. Supply")</eqn>
@@ -1613,6 +1613,11 @@
 				<doc>Defined to maintain equilibrium in the base case (i.e., if no switches are active).  The team can only start as many patients as they have the service capacity to see.</doc>
 				<eqn>ZIDZ((ZIDZ(Group Appointment Rate for Service Capacity , Group Demand per Patient per Week)) , Group Engagement Duration)</eqn>
 			</aux>
+			<aux name="Group Patients Patients w AUD">
+				<units></units>
+				<doc></doc>
+				<eqn>A FUNCTION OF( )</eqn>
+			</aux>
 			<aux name="Group Patients w AUD">
 				<units>pts</units>
 				<doc>The numbers of patients in each service who have AUD as a primary diagnosis.</doc>
@@ -1758,7 +1763,7 @@
 				<doc>When the team has more appointments than they can see in a timely way, they feel "work pressure." It is measured by the ratio of the hours needed for each service (based on the appointments on the calendar and the return to clinic interval) against the actual hours available for each service. When the team works the same hours as their patients need (so each patient can be seen at the appropriate return to clinic interval), then the ratio is 1. If a team has more appointments than they can see given the RVI, then work pressure will rise above 1. (pct)</doc>
 				<eqn>ZIDZ(Group Desired Clinical Hours, Group Actual Hours Available for Service)</eqn>
 			</aux>
-			<aux name=""Intake 13075510446f Hours per Service"">
+			<aux name=""Intake 35744656476f Hours per Service"">
 				<units>Dmnl</units>
 				<doc>The ratio of hours used for any one service compared to the total team hours.</doc>
 				<eqn>ZIDZ(Intake Official Hours Available for Service,"Total Appt. Supply")</eqn>
@@ -1904,7 +1909,7 @@
 			</aux>
 			<aux name="Intake Sensitivity of Intake Evaluation Rate to Wait Times">
 				<units>Dmnl</units>
-				<doc>This controls the magnitude of the effect increases in wait time have on the inflow of patients for intake evaluations, where these drop as wait time increases. A value of "zero" implies that there is no relationship between wait time and the demand for intake evaluations. A value of "1" indicates that if the wait time doubles, then the demand for intake evaulations will be cut in half. For the same situation, a value of "0.5" would result in less of an effect (reducing the demand for intake evaluations to 71216266430f its original value), and a value of "1.5" would result in a greater effect (reducing the demand for intake evaluations to less than 35124702500f its original value).</doc>
+				<doc>This controls the magnitude of the effect increases in wait time have on the inflow of patients for intake evaluations, where these drop as wait time increases. A value of "zero" implies that there is no relationship between wait time and the demand for intake evaluations. A value of "1" indicates that if the wait time doubles, then the demand for intake evaulations will be cut in half. For the same situation, a value of "0.5" would result in less of an effect (reducing the demand for intake evaluations to 716274510f its original value), and a value of "1.5" would result in a greater effect (reducing the demand for intake evaluations to less than 3541702500f its original value).</doc>
 				<eqn>GAME (
 	1)</eqn>
 			</aux>
@@ -1939,7 +1944,7 @@
 				<doc>The ratio of the team's total excess hours worked to their total official hours, averaged over the past year. When the team is working zero overtime, this ratio will be zero. If the team persistently works as much overtime as they have official time, then this ratio will climb to 100 (pct)</doc>
 				<eqn>SMOOTHI(Difference between Excess and Official Team Hours,Burnout Onset Time,0)</eqn>
 			</aux>
-			<aux name=""MM 13075510446f Hours per Service"">
+			<aux name=""MM 35744656476f Hours per Service"">
 				<units>Dmnl</units>
 				<doc>The ratio of hours used for any one service compared to the total team hours.</doc>
 				<eqn>ZIDZ(MM Official Hours Available for Service,"Total Appt. Supply")</eqn>
@@ -1967,8 +1972,8 @@
 			<aux name=""MM Actual True Missed Appointment "">
 				<units>Dmnl</units>
 				<doc>The percent of appointments missed and rescheduled is affected by both the baseline rate and the effect of fatigue due to accumulated long hours.  It is constrained from going below zero.  The baseline rate can be replaced by a user-generated value between zero and 100</doc>
-				<eqn>IF THEN ELSE(Time<0, "MM True Missed Appointment ", IF THEN ELSE("MM User-defined True Missed Appointment "<0, "MM True Missed Appointment "
-	, "MM User-defined True Missed Appointment "))
+				<eqn>IF THEN ELSE(Time<0, "MM True Missed Appointment ", IF THEN ELSE("MM User True Missed Appointment "<0, "MM True Missed Appointment "
+	, "MM User True Missed Appointment "))
 	
 	*"Effect of Short-Term Overtime on Missed Appointments"</eqn>
 			</aux>
@@ -2223,6 +2228,12 @@
 	
 	,0),0.001)</eqn>
 			</aux>
+			<aux name=""MM User True Missed Appointment "">
+				<units>Dmnl</units>
+				<doc>The percent of appointments that must be re-scheduled, as either the clinician or the patient missed the appointment.  This replaces the base case value, which is estimated from team data. (appts/wk)</doc>
+				<eqn>GAME (
+	-0.01)</eqn>
+			</aux>
 			<aux name=""MM User-defined Engagement Duration"">
 				<units>wk</units>
 				<doc>The percentage of patients who are recommended to start each service after completing either an intake evaluation or review. These replace the base case values, which are estimated from team data on the appointment supply, Return-to-clinic Visit Interval (RVI), missed appointment percentage, and median engagement (i.e., the available capacity to treat patients in a timely manner) in each service. These percentages can sum to >1, as providers can decide to start a patient in multiple services. (pct)</doc>
@@ -2235,18 +2246,12 @@
 				<eqn>GAME (
 	-0.01)</eqn>
 			</aux>
-			<aux name=""MM User-defined True Missed Appointment "">
-				<units>Dmnl</units>
-				<doc>The percent of appointments that must be re-scheduled, as either the clinician or the patient missed the appointment.  This replaces the base case value, which is estimated from team data. (appts/wk)</doc>
-				<eqn>GAME (
-	-0.01)</eqn>
-			</aux>
 			<aux name="MM Work Pressure">
 				<units>Dmnl</units>
 				<doc>When the team has more appointments than they can see in a timely way, they feel "work pressure." It is measured by the ratio of the hours needed for each service (based on the appointments on the calendar and the return to clinic interval) against the actual hours available for each service. When the team works the same hours as their patients need (so each patient can be seen at the appropriate return to clinic interval), then the ratio is 1. If a team has more appointments than they can see given the RVI, then work pressure will rise above 1. (pct)</doc>
 				<eqn>ZIDZ(MM Desired Clinical Hours, MM Actual Hours Available for Service)</eqn>
 			</aux>
-			<aux name=""Psych 13075510446f Hours per Service"">
+			<aux name=""Psych 35744656476f Hours per Service"">
 				<units>Dmnl</units>
 				<doc>The ratio of hours used for any one service compared to the total team hours.</doc>
 				<eqn>ZIDZ(Psych Official Hours Available for Service,"Total Appt. Supply")</eqn>
@@ -2564,37 +2569,37 @@
 			</aux>
 			<aux name="Sensitivity of Overtime to Work Pressure">
 				<units>Dmnl</units>
-				<doc>This controls the magnitude of the effect work pressure has on overtime, where an increase in appointment backlog causes the team to work more "unofficial" hours to increase the completion rate to mitigate that increase. A value of "zero" implies that the team will not use overtime or overbook appointments for any amount of work pressure. A value of "1" implies that there is a direct relationship between work pressure and the amount of overtime used (e.g., doubling the work pressure will also double the hours worked per week). For the same situation, a value of "0.5" would only increase the hours worked to 41216266430ver the original value, and a value of 1.5 would increase the hours worked to 182124702500ver the original value.</doc>
+				<doc>This controls the magnitude of the effect work pressure has on overtime, where an increase in appointment backlog causes the team to work more "unofficial" hours to increase the completion rate to mitigate that increase. A value of "zero" implies that the team will not use overtime or overbook appointments for any amount of work pressure. A value of "1" implies that there is a direct relationship between work pressure and the amount of overtime used (e.g., doubling the work pressure will also double the hours worked per week). For the same situation, a value of "0.5" would only increase the hours worked to 416274510ver the original value, and a value of 1.5 would increase the hours worked to 18241702500ver the original value.</doc>
 				<eqn>GAME (
 	1)</eqn>
 			</aux>
 			<aux name="Sensitivity of Patient's Engagement Time to Provider Fatigue">
 				<units>Dmnl</units>
-				<doc>This controls the magnitude of the effect provider fatigue has on patients' duration in each service, where the total time in a service drops as fatigue increases. A value of "zero" implies that provider fatigue will have no effect on patient satisfaction. A value of "1" implies the assumption that doubling provider fatigue (e.g., short-term increases in work hours) will reduce the patients percieved quality of service, and thus patients' willingness to remain in that service by half. For the same situation, a value of "0.5" would reduce the average duration in that service to 71216266430f the original time in service, and a value of 1.5 would reduce the duration to only 35124702500f the original duration.</doc>
+				<doc>This controls the magnitude of the effect provider fatigue has on patients' duration in each service, where the total time in a service drops as fatigue increases. A value of "zero" implies that provider fatigue will have no effect on patient satisfaction. A value of "1" implies the assumption that doubling provider fatigue (e.g., short-term increases in work hours) will reduce the patients percieved quality of service, and thus patients' willingness to remain in that service by half. For the same situation, a value of "0.5" would reduce the average duration in that service to 716274510f the original time in service, and a value of 1.5 would reduce the duration to only 3541702500f the original duration.</doc>
 				<eqn>GAME (
 	1)</eqn>
 			</aux>
 			<aux name="Sensitivity of Scheduled Return Visit Interval to Work Pressure">
 				<units>Dmnl</units>
-				<doc>This controls the magnitude of the effect of work pressure has on the return to clinic interval (RVI), where an increase in appointment backlog causes the team to extend the scheduled RVI for current patients. A value of "zero" implies that the team will not delay existing patients' care (i.e., extend patients' RVI) for any amount of work pressure. A value of "1" implies that there is a direct relationship between work pressure and RVI (e.g., doubling the work pressure will also double the RVI). For the same situation, a value of "0.5" would only increase the RVI by 41216266430ver its original value, and a value of 1.5 would increase the RVI by 182124702500ver the original value.</doc>
+				<doc>This controls the magnitude of the effect of work pressure has on the return to clinic interval (RVI), where an increase in appointment backlog causes the team to extend the scheduled RVI for current patients. A value of "zero" implies that the team will not delay existing patients' care (i.e., extend patients' RVI) for any amount of work pressure. A value of "1" implies that there is a direct relationship between work pressure and RVI (e.g., doubling the work pressure will also double the RVI). For the same situation, a value of "0.5" would only increase the RVI by 416274510ver its original value, and a value of 1.5 would increase the RVI by 18241702500ver the original value.</doc>
 				<eqn>GAME (
 	1)</eqn>
 			</aux>
 			<aux name=""Sensitivity of Staff Burnout Due to Long-Term Overtime"">
 				<units>Dmnl</units>
-				<doc>This controls the magnitude of the effect changes in overtime has on team burnout and quits. A value of "zero" implies that there is no relationship between overtime and burnout and quits. A value of "1" implies the assumption that doubling the hours worked over the official hours will eventually cause enough quits to cut the official hours offered in half. For the same situation, a value of "0.5" would eventually reduce the official team hours to 71216266430f its original value, and a value of 1.5 would reduce the official hours to 35124702500f the original.</doc>
+				<doc>This controls the magnitude of the effect changes in overtime has on team burnout and quits. A value of "zero" implies that there is no relationship between overtime and burnout and quits. A value of "1" implies the assumption that doubling the hours worked over the official hours will eventually cause enough quits to cut the official hours offered in half. For the same situation, a value of "0.5" would eventually reduce the official team hours to 716274510f its original value, and a value of 1.5 would reduce the official hours to 3541702500f the original.</doc>
 				<eqn>GAME (
 	1)</eqn>
 			</aux>
 			<aux name=""Sensitivity of Staff Missed Appointments Due to Short-Term Overtime"">
 				<units>Dmnl</units>
-				<doc>This controls the magnitude of the effect changes in overtime have on time for non-patient-facing care tasks and missed appointments. A value of "zero" implies that there is no relationship between overtime and missed appointments. A value below 1 indicates that providers are not sensitive to small changes in overtime and non-patient-facing task time; a value greater than 1 indicates that providers are very sensitive to small changes. Example: if a team is putting in 20more hours per week than their official supply, then an value of "1" would indicate that the ratio of missed appointments to all appointments would also be 20 27928gher than before. A value of "0.5" would cause that same 20 22250816ncrease in hours worked to have less of an effect (causing only a 9.5 35920928ncrease in the missed appointment percentage). A value of "2" would cause that same 20 0ncrease to have a greater effect ( raising the missed appointment percentage by 44).</doc>
+				<doc>This controls the magnitude of the effect changes in overtime have on time for non-patient-facing care tasks and missed appointments. A value of "zero" implies that there is no relationship between overtime and missed appointments. A value below 1 indicates that providers are not sensitive to small changes in overtime and non-patient-facing task time; a value greater than 1 indicates that providers are very sensitive to small changes. Example: if a team is putting in 20more hours per week than their official supply, then an value of "1" would indicate that the ratio of missed appointments to all appointments would also be 20 31048gher than before. A value of "0.5" would cause that same 20 8881472ncrease in hours worked to have less of an effect (causing only a 9.5 469872ncrease in the missed appointment percentage). A value of "2" would cause that same 20 0ncrease to have a greater effect ( raising the missed appointment percentage by 44).</doc>
 				<eqn>GAME (
 	1)</eqn>
 			</aux>
 			<aux name="Sensitivity of Treatment Decisions to Existing Patient Care Delays">
 				<units>Dmnl</units>
-				<doc>This controls the magnitude of the effect existing patient care delays have on the team's treatment decisions, where decisions to start patients in a service drop as actual return to clinic visit interval increases (relative to target RVI). A value of "zero" implies that that no amount of care delay will influence the team's treatment decisions. A value of "1" implies that doubling the time between appointments for existing patients (e.g., delaying their care) will reduce the decisions to start in that service by half. For the same situation, a value of "0.5" would reduce the decisions to start in that service to 71216266430f the original rate, and a value of "1.5" would reduce the decisions to start to only 35124702500f the original rate.</doc>
+				<doc>This controls the magnitude of the effect existing patient care delays have on the team's treatment decisions, where decisions to start patients in a service drop as actual return to clinic visit interval increases (relative to target RVI). A value of "zero" implies that that no amount of care delay will influence the team's treatment decisions. A value of "1" implies that doubling the time between appointments for existing patients (e.g., delaying their care) will reduce the decisions to start in that service by half. For the same situation, a value of "0.5" would reduce the decisions to start in that service to 716274510f the original rate, and a value of "1.5" would reduce the decisions to start to only 3541702500f the original rate.</doc>
 				<eqn>GAME (
 	1)</eqn>
 			</aux>
@@ -2605,7 +2610,7 @@
 			</aux>
 			<aux name="Total Actual Hours Available for Service">
 				<units>hrs/wk</units>
-				<doc>The clinician time available for a service depends on the total clinical hours available, the relative increase in hours due to overtime, and the  0x1.3854002396d18p-1002llocated to a service.</doc>
+				<doc>The clinician time available for a service depends on the total clinical hours available, the relative increase in hours due to overtime, and the  0x1.7854000197948p-1015llocated to a service.</doc>
 				<eqn>Intake Actual Hours Available for Service+Psych Actual Hours Available for Service+EBPsych Actual Hours Available for Service
 	+CC Actual Hours Available for Service+MM Actual Hours Available for Service+Adjunctive Actual Hours Available for Service+Group Actual Hours Available for Service</eqn>
 			</aux>
